@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#CAC3C3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:contentDescription="@string/app_logo_desc"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtAppName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/txtAppName"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/convert_title"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/weight_hint"
+        android:inputType="numberDecimal"
+        android:textColorHint="#CCC8C8"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rgConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbPoundsToKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rb_pounds_to_kg" />
+
+        <RadioButton
+            android:id="@+id/rbKgToPounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_kg_to_pounds" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#C5C3C3"
+        android:text="@string/btn_convert"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="197dp"
+        android:layout_height="29dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF5722"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Convert Weight</string>
+    <string name="txtAppName">Medical Calculator</string>
+    <string name="convert_title">Convert Patient Weight</string>
+    <string name="rb_pounds_to_kg">Convert Pounds to Kilograms</string>
+    <string name="rb_kg_to_pounds">Convert Kilograms to Pounds</string>
+    <string name="btn_convert">CONVERT WEIGHT</string>
+    <string name="weight_hint">Weight of Patient</string>
+    <string name="result_placeholder">shows “102.3 kilograms</string>
+    <string name="app_logo_desc">App Logo</string>
+
+    <string name="result_format_kg">%1$.1f kilograms</string>
+    <string name="result_format_lb">%1$.1f pounds</string>
+</resources>
